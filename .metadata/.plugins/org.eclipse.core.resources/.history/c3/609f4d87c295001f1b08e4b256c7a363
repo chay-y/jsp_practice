@@ -1,0 +1,38 @@
+package car;
+
+import common.JDBConnect;
+import membership.MemberDTO;
+
+public class CarDAO extends JDBConnect{
+	public CarDAO(String drv, String url, String id, String pw) {
+		super(drv, url, id, pw);
+	}
+	
+	public CarDTO getCarDTO(String uid, String upass) {
+
+		//DTO 객체 생성
+		CarDTO dto = new CarDTO();		
+		//아이디와 패스워드가 일치하는 회원을 검색
+		String query = "SELECT * FROM member WHERE id=? AND pass=?";
+		
+		try {
+			pstmt = con.prepareStatement(query);
+			pstmt.setString(1,uid);
+			pstmt.setString(2,upass);
+			
+			//쿼리실행
+			rs=pstmt.executeQuery();
+			
+			//결과 출력
+			if(rs.next()) {
+				dto.setId(rs.getString("id"));
+				dto.setPass(rs.getString("pass"));
+				dto.setName(rs.getString("name"));
+				dto.setRegidate(rs.getString("regidate"));
+			}
+		}catch(Exception e) {
+			e.printStackTrace();
+		}
+		return dto;
+	}
+}

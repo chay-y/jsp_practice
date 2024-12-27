@@ -1,0 +1,24 @@
+1728868148731	Delete element
+1728951632300	Move '06_Session.jsp' to '06_Session'
+1728952216213	Delete element
+1728954910844	Delete element
+1728954980148	Delete element
+1728955021509	Delete element
+1728955214918	Delete element
+1728955240451	Delete element
+1728955267444	Delete element
+1728955747017	Encapsulate field 'id, ...'
+1728955749060	Encapsulate field 'pass, ...'
+1728955750870	Encapsulate field 'name, ...'
+1728955753558	Encapsulate field 'regidate, ...'
+1729038609993	Encapsulate field 'num, ...'
+1729038612177	Encapsulate field 'title, ...'
+1729038614257	Encapsulate field 'content, ...'
+1729038616972	Encapsulate field 'id, ...'
+1729038618648	Encapsulate field 'postdate, ...'
+1729038620368	Encapsulate field 'visitcount, ...'
+1729038622607	Encapsulate field 'name, ...'
+1729039476371	Delete element
+1729060423722	Delete element
+1729060730753	Rename resource 'view.jsp'
+1729217184363	Rename resource 'frontController.jsp'

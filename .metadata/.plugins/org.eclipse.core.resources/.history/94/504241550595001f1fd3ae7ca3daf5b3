@@ -1,0 +1,35 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<h2>차량 관리 화면</h2>
+	<center>
+		<table border="1">
+			<tr>
+				<td><a herf="carMain.jsp">홈</a></td>
+				<td><a herf="carManager.jsp">차량관리</a></td>
+				<td><a herf="">판매 정보 등록</a></td>
+				<td><a herf="">판매 목록</a></td>
+			</tr>
+		</table>
+		<h3>- 차량등록</h3>
+		<form action="" method="post" name="">
+			<p>제조사
+				<select name="MAKER">
+					<option value="현대">현대</option>
+					<option value="기아">기아</option>
+					<option value="쌍용">쌍용</option>
+				</select>
+			</p>
+			<p>모델명 <input type="text" name="MODELNUM"></p>
+			<p>차량가격 <input type="text" name="PRICE"></p>
+		<input type="submit" value="등록">
+	</form>
+	</center>
+</body>
+</html>
